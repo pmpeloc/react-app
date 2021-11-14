@@ -4,7 +4,7 @@ type JSXComponent = () => JSX.Element;
 
 interface Route {
   path: string;
-  Component: JSXComponent;
+  component: JSXComponent;
   name: string;
   children?: Route[];
 }
@@ -12,17 +12,17 @@ interface Route {
 export const routes: Route[] = [
   {
     path: '/lazy1',
-    Component: LazyPage1,
+    component: LazyPage1,
     name: 'LazyPage-1',
   },
   {
     path: '/lazy2',
-    Component: LazyPage2,
+    component: LazyPage2,
     name: 'LazyPage-2',
   },
   {
     path: '/lazy3',
-    Component: LazyPage3,
+    component: LazyPage3,
     name: 'LazyPage-3',
   },
 ];
